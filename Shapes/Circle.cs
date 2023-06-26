@@ -14,6 +14,6 @@ public class Circle : IShape
 
     public double CalculateArea()
     {
-        return Math.PI * _radius * _radius;
+        return Math.PI * Math.Pow(_radius, 2.0);
     }
 }

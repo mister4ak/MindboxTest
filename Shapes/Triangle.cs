@@ -36,7 +36,7 @@
             double secondCathet = sides[1];
             double hypotenuse = sides[2];
             
-            return Math.Abs(hypotenuse * hypotenuse - (firstCathet * firstCathet + secondCathet * secondCathet)) < Epsilon;
+            return Math.Abs(Math.Pow(hypotenuse, 2.0) - (Math.Pow(firstCathet, 2.0) + Math.Pow(secondCathet, 2.0))) < Epsilon;
         }
     }
 }
